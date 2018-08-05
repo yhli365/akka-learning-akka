@@ -1,0 +1,9 @@
+[repositories]
+  local
+  aliyun: http://maven.aliyun.com/nexus/content/groups/public/
+  central: http://repo1.maven.org/maven2/
+  repo2: http://repo2.maven.org/maven2/
+  typesafe: http://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly  
+  typesafe2: http://repo.typesafe.com/typesafe/releases/
+  sbt-plugin: http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/
+  sonatype: http://oss.sonatype.org/content/repositories/releases/
