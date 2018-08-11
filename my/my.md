@@ -39,6 +39,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor"   % "2.3.6",
   "com.typesafe.akka" %% "akka-remote"  % "2.3.6",
   "com.typesafe.akka" %% "akka-agent"   % "2.3.6",
+  "com.typesafe.akka" %% "akka-cluster" % "2.3.6",
+  "com.typesafe.akka" %% "akka-contrib" % "2.3.6",
   "com.typesafe.akka" %% "akka-testkit" % "2.3.6"   % "test",
 --[2.3.6,2.3.9]
   "com.typesafe.akka" % "akka-http-experimental_2.11" % "1.0-M4",
@@ -68,4 +70,27 @@ $ sbt
 > test
 > package
 > publish-local
+```
+
+# 运行
+=============================
+## ch6
+```
+# -----run cluster-----
+$ cd akkademaid-java
+$ sbt run
+$ sbt -Dakka.remote.netty.tcp.port=2551 \
+    -Dcom.sun.management.jmxremote.port=9551 \
+    -Dcom.sun.management.jmxremote.authenticate=false \
+    -Dcom.sun.management.jmxremote.ssl=false \
+	run
+$ sbt -Dakka.remote.netty.tcp.port=0 \
+    -Dcom.sun.management.jmxremote.port=9551 \
+    -Dcom.sun.management.jmxremote.authenticate=false \
+    -Dcom.sun.management.jmxremote.ssl=false \
+	run
+# -----run client-----
+$ cd akkademaid-client-java
+$ sbt run
+$ sbt run
 ```
