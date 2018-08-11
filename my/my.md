@@ -41,9 +41,13 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-agent"   % "2.3.6",
   "com.typesafe.akka" %% "akka-testkit" % "2.3.6"   % "test",
 --[2.3.6,2.3.9]
+  "com.typesafe.akka" % "akka-http-experimental_2.11" % "1.0-M4",
+  "com.typesafe.akka" % "akka-http-core-experimental_2.11" % "1.0-M4",
+--[1.0-M4]
   "org.scala-lang.modules" %% "scala-java8-compat" % "0.7.0",
 --[0.7.0]
   "junit"             % "junit"           % "4.11"  % "test",
+--[4.11,4.12]
   "com.novocode"      % "junit-interface" % "0.11"  % "test"
 --[0.11]
   "org.scalatest"     %% "scalatest"      % "2.1.6" % "test"
