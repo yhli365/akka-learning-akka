@@ -46,6 +46,10 @@ libraryDependencies ++= Seq(
 --[1.0-M4]
   "org.scala-lang.modules" %% "scala-java8-compat" % "0.7.0",
 --[0.7.0]
+  "com.syncthemall" % "boilerpipe" % "1.2.2",
+--[1.2.2]
+  "com.jason-goodwin" % "better-monads" % "0.2.0",
+--[0.2.0]
   "junit"             % "junit"           % "4.11"  % "test",
 --[4.11,4.12]
   "com.novocode"      % "junit-interface" % "0.11"  % "test"
