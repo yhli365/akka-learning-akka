@@ -42,7 +42,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-cluster" % "2.3.6",
   "com.typesafe.akka" %% "akka-contrib" % "2.3.6",
   "com.typesafe.akka" %% "akka-testkit" % "2.3.6"   % "test",
---[2.3.6,2.3.9]
+--[2.3.6,2.3.9,2.3.11]
   "com.typesafe.akka" % "akka-http-experimental_2.11" % "1.0-M4",
   "com.typesafe.akka" % "akka-http-core-experimental_2.11" % "1.0-M4",
 --[1.0-M4]
@@ -52,6 +52,8 @@ libraryDependencies ++= Seq(
 --[1.2.2]
   "com.jason-goodwin" % "better-monads" % "0.2.0",
 --[0.2.0]
+  "ch.qos.logback" % "logback-classic" % "1.0.0" % "runtime",
+--[1.0.0]
   "junit"             % "junit"           % "4.11"  % "test",
 --[4.11,4.12]
   "com.novocode"      % "junit-interface" % "0.11"  % "test"
